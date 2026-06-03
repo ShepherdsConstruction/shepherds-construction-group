@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shepherds Construction Group | Roofing & General Contracting | Tulsa, OK</title>
+  <meta name="description" content="Shepherds Construction Group — Roofing, remodels, kitchens, baths, and general contracting in Tulsa and Northeast Oklahoma. Built on Faith. Built to Last." />
+  <meta name="keywords" content="roofing tulsa, general contractor tulsa, home remodel tulsa, kitchen remodel tulsa, bathroom remodel, storm damage repair tulsa, northeast oklahoma contractor" />
+  <meta property="og:title" content="Shepherds Construction Group | Tulsa Roofing & General Contracting" />
+  <meta property="og:description" content="Built on Faith. Built to Last. Full-service roofing, remodels, and general contracting across Tulsa and NE Oklahoma." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Analytics — replace G-XXXXXXXXXX and uncomment after go-live -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  -->
+
+  <link rel="icon" type="image/png" href="SGC_Favicon.png" />
+  <link rel="apple-touch-icon" href="SGC_Favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --purple:      #5B2D8E;
+      --purple-dark: #2e1648;
+      --gold:        #C9A84C;
+      --gold-lt:     #dfc46a;
+      --black:       #060606;
+      --ink:         #0d0d0d;
+      --charcoal:    #161616;
+      --mid:         #222222;
+      --stone:       #f2f0ed;
+      --mist:        #f7f6f4;
+      --white:       #ffffff;
+      --grey:        #888888;
+      --display:     'Bebas Neue', sans-serif;
+      --cond:        'Barlow Condensed', sans-serif;
+      --body:        'Barlow', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body);
+      background: var(--ink);
+      color: var(--white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Grain texture */
+    body::after {
+      content: '';
+      position: fixed; inset: 0; z-index: 9998;
+      pointer-events: none; opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 160px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px;
+      transition: background 0.4s, height 0.3s, border-color 0.4s;
+      border-bottom: 1px solid transparent;
+    }
+    nav.scrolled {
+      height: 62px;
+      background: rgba(6,6,6,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom-color: rgba(201,168,76,0.15);
+    }
+    .nav-logo img { height: 46px; width: auto; transition: height 0.3s; }
+    nav.scrolled .nav-logo img { height: 38px; }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-family: var(--cond); font-size: 13px; font-weight: 600;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      color: rgba(255,255,255,0.6); transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold); color: var(--black) !important;
+      padding: 10px 22px; font-weight: 700 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold-lt) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 5px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: all 0.3s; }
+    .mobile-menu {
+      display: none; position: fixed; top: 72px; left: 0; right: 0;
+      background: rgba(6,6,6,0.98); backdrop-filter: blur(20px);
+      padding: 16px 28px 28px; z-index: 999;
+      border-bottom: 2px solid var(--gold);
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block; font-family: var(--cond); font-size: 18px; font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(255,255,255,0.8); padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06); transition: color 0.2s;
+    }
+    .mobile-menu a:last-child { border: none; color: var(--gold); font-size: 22px; margin-top: 6px; }
+    .mobile-menu a:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      height: 100vh; min-height: 700px;
+      display: flex; align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=85') center 35% / cover no-repeat;
+      animation: heroZoom 28s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.07); } }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(6,6,6,0.1) 0%, rgba(6,6,6,0.2) 40%, rgba(6,6,6,0.90) 100%),
+        linear-gradient(to right, rgba(6,6,6,0.68) 0%, rgba(6,6,6,0.0) 65%);
+    }
+    /* Subtle fog/haze depth layer */
+    .hero-fog {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 40%, rgba(91,45,142,0.14) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 80%, rgba(6,6,6,0.3) 0%, transparent 50%);
+    }
+    .hero-gold-line {
+      position: absolute; top: 0; right: 28%; width: 1px; height: 0;
+      background: linear-gradient(to bottom, transparent 0%, var(--gold) 40%, transparent 100%);
+      animation: lineDrop 1.8s 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    @keyframes lineDrop { to { height: 100%; } }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 52px 80px;
+      max-width: 860px; width: 100%;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 14px;
+      font-family: var(--cond); font-size: 12px; font-weight: 600;
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 24px;
+      opacity: 0; animation: up 0.8s 0.15s forwards;
+    }
+    .hero-tag::before { content: ''; width: 32px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .hero-logo {
+      width: 320px; margin-bottom: 28px;
+      filter: drop-shadow(0 4px 32px rgba(0,0,0,0.7)) drop-shadow(0 0 12px rgba(0,0,0,0.4));
+      opacity: 0; animation: up 0.8s 0.3s forwards;
+    }
+    .hero-h1 {
+      font-family: var(--display);
+      font-size: clamp(4rem, 8vw, 7.5rem);
+      line-height: 0.92; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--white); margin-bottom: 6px;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+      opacity: 0; animation: up 0.8s 0.45s forwards;
+    }
+    .hero-h1 span { color: var(--gold); }
+    .hero-h2 {
+      font-family: var(--display);
+      font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+      letter-spacing: 8px; text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 28px;
+      opacity: 0; animation: up 0.8s 0.58s forwards;
+    }
+    .hero-rule {
+      width: 0; height: 2px; background: var(--gold); margin-bottom: 28px;
+      animation: widen 1s 0.8s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    @keyframes widen { to { width: 56px; } }
+    .hero-desc {
+      font-size: 16px; font-weight: 300; line-height: 1.8;
+      color: rgba(255,255,255,0.65); max-width: 500px;
+      margin-bottom: 40px;
+      opacity: 0; animation: up 0.8s 0.9s forwards;
+    }
+    .hero-actions {
+      display: flex; gap: 14px; flex-wrap: wrap;
+      opacity: 0; animation: up 0.8s 1s forwards;
+    }
+    .btn-gold {
+      display: inline-block; background: var(--gold); color: var(--black);
+      font-family: var(--cond); font-size: 13px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      padding: 16px 44px; transition: all 0.25s;
+    }
+    .btn-gold:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.25); }
+    .btn-ghost {
+      display: inline-block; background: transparent; color: rgba(255,255,255,0.85);
+      font-family: var(--cond); font-size: 13px; font-weight: 600;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      padding: 14px 44px; border: 1px solid rgba(255,255,255,0.3);
+      transition: all 0.25s;
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .hero-corner {
+      position: absolute; bottom: 80px; right: 52px; z-index: 2; text-align: right;
+      opacity: 0; animation: up 0.8s 1.2s forwards;
+    }
+    .hero-corner-label {
+      font-family: var(--cond); font-size: 10px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(255,255,255,0.3); margin-bottom: 6px;
+    }
+    .hero-corner-phone {
+      font-family: var(--display); font-size: 2rem; letter-spacing: 2px;
+      color: var(--gold); transition: color 0.2s;
+    }
+    .hero-corner-phone:hover { color: var(--gold-lt); }
+    @keyframes up {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── TICKER ── */
+    .ticker {
+      background: var(--purple-dark);
+      border-top: 2px solid var(--gold);
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+      overflow: hidden;
+    }
+    .ticker-track {
+      display: flex; align-items: center;
+      animation: tickScroll 22s linear infinite;
+      white-space: nowrap;
+    }
+    @keyframes tickScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .tick {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 16px 44px; flex-shrink: 0;
+      font-family: var(--cond); font-size: 12px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(255,255,255,0.75); white-space: nowrap;
+    }
+    .tick-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+    /* ── SHARED ── */
+    .section { padding: 96px 52px; }
+    .wrap { max-width: 1120px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-family: var(--cond); font-size: 11px; font-weight: 600;
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 14px;
+    }
+    .eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .section-title {
+      font-family: var(--display);
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
+      letter-spacing: 2px; line-height: 0.95; text-transform: uppercase;
+      color: var(--white); margin-bottom: 20px;
+    }
+    .section-title.dark { color: var(--charcoal); }
+    .section-title span { color: var(--gold); }
+    .section-body {
+      font-size: 16px; font-weight: 300; line-height: 1.8;
+      color: rgba(255,255,255,0.5); max-width: 500px;
+    }
+    .section-body.dark { color: var(--grey); }
+    .gold-rule { width: 44px; height: 2px; background: var(--gold); margin: 20px 0 40px; }
+
+    /* ── SERVICES ── */
+    #services { background: var(--mist); }
+    .services-layout {
+      display: grid; grid-template-columns: 360px 1fr;
+      gap: 72px; align-items: start;
+    }
+    .services-left { position: sticky; top: 96px; }
+    .accordion { margin-top: 40px; }
+    .acc-item { border-top: 1px solid rgba(0,0,0,0.1); }
+    .acc-item:last-child { border-bottom: 1px solid rgba(0,0,0,0.1); }
+    .acc-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 0; cursor: pointer; user-select: none;
+      font-family: var(--cond); font-size: 13px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--purple); transition: color 0.2s;
+    }
+    .acc-header:hover { color: var(--gold); }
+    .acc-arrow {
+      width: 22px; height: 22px; border: 1px solid currentColor; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .acc-arrow svg { width: 9px; height: 9px; transition: transform 0.3s; }
+    .acc-item.open .acc-arrow { background: var(--gold); border-color: var(--gold); }
+    .acc-item.open .acc-arrow svg { transform: rotate(180deg); }
+    .acc-body { display: none; padding-bottom: 12px; }
+    .acc-item.open .acc-body { display: block; }
+    .acc-service {
+      display: flex; align-items: center; gap: 14px;
+      padding: 10px 0; font-size: 15px; font-weight: 400;
+      color: #555; border-bottom: 1px solid rgba(0,0,0,0.05);
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .acc-service:last-child { border: none; }
+    .acc-service::before { content: ''; width: 6px; height: 1px; background: var(--gold); flex-shrink: 0; transition: width 0.2s; }
+    .acc-service:hover { color: #111; padding-left: 4px; }
+    .acc-service:hover::before { width: 12px; }
+
+    /* Right: feature grid */
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 2px; background: rgba(0,0,0,0.08);
+    }
+    .feat {
+      background: var(--white); padding: 40px 32px;
+      position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feat::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 2px; background: var(--gold); transition: width 0.4s;
+    }
+    .feat:hover { transform: translateY(-4px); box-shadow: 0 24px 64px rgba(0,0,0,0.1); z-index: 1; }
+    .feat:hover::after { width: 100%; }
+    .feat-num {
+      font-family: var(--display); font-size: 4.5rem; letter-spacing: 2px;
+      color: rgba(91,45,142,0.07); line-height: 1; margin-bottom: 16px; transition: color 0.3s;
+    }
+    .feat:hover .feat-num { color: rgba(201,168,76,0.12); }
+    .feat-name {
+      font-family: var(--cond); font-size: 15px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: #111; margin-bottom: 12px;
+    }
+    .feat-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--grey); }
+    .feat-cta {
+      background: var(--purple-dark); padding: 36px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .feat-cta-text {
+      font-family: var(--display); font-size: 1.8rem; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--white); line-height: 1.1;
+    }
+    .feat-cta-text span { color: var(--gold); }
+
+    /* ── CALLOUT ── */
+    .callout {
+      background: var(--charcoal);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 72px 52px;
+    }
+    .callout-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 40px; flex-wrap: wrap;
+    }
+    .callout-msg {
+      font-family: var(--display); font-size: clamp(2rem, 4vw, 3.5rem);
+      letter-spacing: 2px; text-transform: uppercase; color: var(--white); line-height: 1.05;
+    }
+    .callout-msg span { color: var(--gold); }
+    .callout-num {
+      font-family: var(--display); font-size: clamp(2.4rem, 5vw, 4rem);
+      letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
+      white-space: nowrap; transition: color 0.2s;
+    }
+    .callout-num:hover { color: var(--gold-lt); }
+
+    /* ── ABOUT ── */
+    #about { background: var(--ink); position: relative; overflow: hidden; }
+    #about::before {
+      content: ''; position: absolute; top: -200px; right: -200px;
+      width: 700px; height: 700px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(91,45,142,0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
+    .about-pull {
+      font-family: var(--display); font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      letter-spacing: 1px; text-transform: uppercase; line-height: 1.2;
+      color: rgba(255,255,255,0.85); border-left: 2px solid var(--gold);
+      padding-left: 24px; margin: 32px 0 40px;
+    }
+    .about-pull span { color: var(--gold); }
+    .value-list { list-style: none; display: flex; flex-direction: column; }
+    .value-item {
+      display: flex; align-items: flex-start; gap: 20px;
+      padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: border-color 0.2s;
+    }
+    .value-item:last-child { border: none; }
+    .value-item:hover { border-bottom-color: rgba(201,168,76,0.2); }
+    .value-icon {
+      width: 44px; height: 44px; border: 1px solid rgba(201,168,76,0.3);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+    }
+    .value-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; }
+    .value-title {
+      font-family: var(--cond); font-size: 16px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: rgba(255,255,255,0.9); margin-bottom: 6px;
+    }
+    .value-desc { font-size: 15px; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,0.45); }
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .stat-box {
+      padding: 32px 28px;
+      background: rgba(255,255,255,0.02); border: 1px solid rgba(201,168,76,0.08);
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .stat-box:hover { background: rgba(201,168,76,0.04); border-color: rgba(201,168,76,0.25); }
+    .stat-num {
+      font-family: var(--display); font-size: 3.5rem; letter-spacing: 2px;
+      color: var(--gold); line-height: 1; margin-bottom: 10px;
+    }
+    .stat-lbl {
+      font-family: var(--cond); font-size: 11px; font-weight: 600;
+      letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.3);
+    }
+    .area-box {
+      margin-top: 2px; padding: 28px;
+      background: rgba(255,255,255,0.02); border: 1px solid rgba(201,168,76,0.08);
+    }
+    .area-label {
+      font-family: var(--cond); font-size: 10px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 10px;
+    }
+    .area-text { font-size: 15px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.55); }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--black); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 96px; align-items: start; }
+    .contact-phone {
+      display: block;
+      font-family: var(--display); font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      letter-spacing: 3px; color: var(--gold); margin-bottom: 8px; transition: color 0.2s;
+    }
+    .contact-phone:hover { color: var(--gold-lt); }
+    .contact-hours {
+      font-family: var(--cond); font-size: 11px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(255,255,255,0.25); margin-bottom: 36px;
+    }
+    .email-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; }
+    .email-link {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.45); transition: color 0.2s;
+    }
+    .email-link:hover { color: var(--gold); }
+    .email-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .area-card {
+      padding: 22px 24px; border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
+    }
+    .area-card-label {
+      font-family: var(--cond); font-size: 10px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 8px;
+    }
+    .area-card-text { font-size: 14px; font-weight: 300; line-height: 1.65; color: rgba(255,255,255,0.45); }
+
+    /* Form */
+    .form-wrap {
+      background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.06);
+      padding: 44px;
+    }
+    .form-heading {
+      font-family: var(--display); font-size: 2rem; letter-spacing: 2px;
+      text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 28px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+    .form-lbl {
+      font-family: var(--cond); font-size: 10px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.3);
+    }
+    .form-field {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      color: var(--white); font-family: var(--body); font-size: 15px; font-weight: 300;
+      padding: 14px 16px; outline: none; width: 100%;
+      transition: border-color 0.25s; -webkit-appearance: none; border-radius: 0;
+    }
+    .form-field::placeholder { color: rgba(255,255,255,0.18); }
+    .form-field:focus { border-color: var(--gold); }
+    select.form-field option { background: #181818; }
+    textarea.form-field { resize: vertical; min-height: 110px; }
+    .honeypot { display: none !important; }
+    .form-btn {
+      width: 100%; background: var(--gold); color: var(--black);
+      font-family: var(--cond); font-size: 13px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      padding: 17px; border: none; cursor: pointer; transition: all 0.25s; margin-top: 6px;
+    }
+    .form-btn:hover:not(:disabled) { background: var(--gold-lt); transform: translateY(-1px); }
+    .form-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .form-ok {
+      display: none; text-align: center; padding: 56px 24px;
+    }
+    .form-ok-icon {
+      font-family: var(--display); font-size: 4rem; color: var(--gold); margin-bottom: 16px;
+    }
+    .form-ok-msg {
+      font-family: var(--cond); font-size: 1.3rem; font-weight: 600;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: rgba(255,255,255,0.7); line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #020202; padding: 36px 52px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .footer-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: grid; grid-template-columns: auto 1fr auto;
+      align-items: center; gap: 20px;
+    }
+    .footer-logo img { height: 34px; opacity: 0.55; }
+    .footer-tag {
+      text-align: center;
+      font-family: var(--cond); font-size: 12px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.18);
+    }
+    .footer-copy { font-family: var(--cond); font-size: 10px; letter-spacing: 1px; color: rgba(255,255,255,0.15); text-align: right; }
+
+    /* ── MOBILE STICKY ── */
+    .m-cta {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 997;
+      background: var(--gold); color: var(--black);
+      font-family: var(--cond); font-size: 14px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 18px; text-align: center;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.5);
+    }
+
+    /* ── REVEAL ── */
+    .rv  { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .rvl { opacity: 0; transform: translateX(-28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .rvr { opacity: 0; transform: translateX(28px);  transition: opacity 0.7s ease, transform 0.7s ease; }
+    .rv.on, .rvl.on, .rvr.on { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .services-layout { grid-template-columns: 1fr; gap: 48px; }
+      .services-left { position: static; }
+      .about-grid { grid-template-columns: 1fr; gap: 56px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 56px; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; }
+      .footer-copy { text-align: center; }
+      .hero-corner { display: none; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .section { padding: 72px 24px; }
+      .hero-content { padding: 0 24px 72px; }
+      .callout { padding: 56px 24px; }
+      .callout-inner { flex-direction: column; gap: 20px; }
+      footer { padding: 28px 24px; }
+      .m-cta { display: block; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-wrap { padding: 28px 20px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero-h1 { font-size: 3.2rem; }
+      .hero-logo { width: 170px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#home" class="nav-logo">
+    <img src="Logo_NoBackground.png" alt="Shepherds Construction Group" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:9188571110" class="nav-cta">918.857.1110</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="tel:9188571110">📞 918.857.1110</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-gold-line"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Tulsa &amp; Northeast Oklahoma</div>
+    <img src="Logo_NoBackground.png" alt="Shepherds Construction Group" class="hero-logo" />
+    <h1 class="hero-h1">Built on <span>Faith.</span></h1>
+    <div class="hero-h2">Built to Last.</div>
+    <div class="hero-rule"></div>
+    <p class="hero-desc">Roofing, remodels, kitchens, baths, and full general contracting — delivered with integrity on every job across Tulsa and NE Oklahoma.</p>
+    <div class="hero-actions">
+      <a href="tel:9188571110" class="btn-gold">Call 918.857.1110</a>
+      <a href="#contact" class="btn-ghost">Free Estimate</a>
+    </div>
+  </div>
+  <div class="hero-corner">
+    <div class="hero-corner-label">Call or Text Anytime</div>
+    <a href="tel:9188571110" class="hero-corner-phone">918.857.1110</a>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="tick"><span class="tick-dot"></span>Licensed &amp; Insured</span>
+    <span class="tick"><span class="tick-dot"></span>Free Estimates</span>
+    <span class="tick"><span class="tick-dot"></span>Fast Turnaround</span>
+    <span class="tick"><span class="tick-dot"></span>Tulsa &amp; NE Oklahoma</span>
+    <span class="tick"><span class="tick-dot"></span>Faith-Driven Business</span>
+    <span class="tick"><span class="tick-dot"></span>Roofing &amp; General Contracting</span>
+    <span class="tick"><span class="tick-dot"></span>Storm Damage Specialists</span>
+    <span class="tick"><span class="tick-dot"></span>Kitchen &amp; Bath Remodels</span>
+    <span class="tick"><span class="tick-dot"></span>Licensed &amp; Insured</span>
+    <span class="tick"><span class="tick-dot"></span>Free Estimates</span>
+    <span class="tick"><span class="tick-dot"></span>Fast Turnaround</span>
+    <span class="tick"><span class="tick-dot"></span>Tulsa &amp; NE Oklahoma</span>
+    <span class="tick"><span class="tick-dot"></span>Faith-Driven Business</span>
+    <span class="tick"><span class="tick-dot"></span>Roofing &amp; General Contracting</span>
+    <span class="tick"><span class="tick-dot"></span>Storm Damage Specialists</span>
+    <span class="tick"><span class="tick-dot"></span>Kitchen &amp; Bath Remodels</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="services-layout">
+
+      <div class="services-left rvl">
+        <div class="eyebrow">What We Do</div>
+        <h2 class="section-title dark">Our <span>Services</span></h2>
+        <div class="gold-rule" style="background: var(--purple);"></div>
+        <p class="section-body dark">Full-service construction from your roof to your floors. One contractor. One standard. Done right every time.</p>
+        <div class="accordion">
+          <div class="acc-item open">
+            <div class="acc-header" onclick="toggleAcc(this)">
+              Roofing
+              <span class="acc-arrow"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 1 5 5 9 1"/></svg></span>
+            </div>
+            <div class="acc-body">
+              <div class="acc-service">New Roof &amp; Replacement</div>
+              <div class="acc-service">Roof Repairs &amp; Leaks</div>
+              <div class="acc-service">Storm &amp; Hail Damage</div>
+              <div class="acc-service">Wood Rot Repair</div>
+              <div class="acc-service">Chimney Repair</div>
+              <div class="acc-service">Roof Inspections</div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-header" onclick="toggleAcc(this)">
+              Exterior
+              <span class="acc-arrow"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 1 5 5 9 1"/></svg></span>
+            </div>
+            <div class="acc-body">
+              <div class="acc-service">Siding Installation &amp; Repair</div>
+              <div class="acc-service">Hardie Board &amp; Fiber Cement</div>
+              <div class="acc-service">Exterior Painting</div>
+              <div class="acc-service">French Drains</div>
+              <div class="acc-service">Drainage Solutions</div>
+              <div class="acc-service">Landscape Design &amp; Install</div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-header" onclick="toggleAcc(this)">
+              Interior
+              <span class="acc-arrow"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 1 5 5 9 1"/></svg></span>
+            </div>
+            <div class="acc-body">
+              <div class="acc-service">Kitchen Remodels</div>
+              <div class="acc-service">Bathroom Remodels</div>
+              <div class="acc-service">Drywall &amp; Sheetrock</div>
+              <div class="acc-service">Mud, Tape &amp; Texture</div>
+              <div class="acc-service">Flooring Installation</div>
+              <div class="acc-service">Tile Work</div>
+              <div class="acc-service">Interior Painting</div>
+            </div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-header" onclick="toggleAcc(this)">
+              General Contracting
+              <span class="acc-arrow"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 1 5 5 9 1"/></svg></span>
+            </div>
+            <div class="acc-body">
+              <div class="acc-service">Full Home Remodels</div>
+              <div class="acc-service">Home Renovation</div>
+              <div class="acc-service">Free Estimates</div>
+              <div class="acc-service">Property Inspections</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rvr">
+        <div class="feature-grid">
+          <div class="feat">
+            <div class="feat-num">01</div>
+            <div class="feat-name">Roofing</div>
+            <p class="feat-desc">New installs, full replacements, storm damage repair, and leak fixes using quality materials built for Oklahoma weather.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-num">02</div>
+            <div class="feat-name">Remodels</div>
+            <p class="feat-desc">Kitchen and bath renovations, full home remodels, and interior work managed start to finish under one roof.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-num">03</div>
+            <div class="feat-name">Exterior</div>
+            <p class="feat-desc">Siding, Hardie Board, painting, drainage, and landscaping — everything that protects and elevates your property's exterior.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-num">04</div>
+            <div class="feat-name">General Contracting</div>
+            <p class="feat-desc">One contractor. One point of contact. We manage the scope, the crew, and the quality from estimate to final walkthrough.</p>
+          </div>
+        </div>
+        <div style="margin-top: 2px;">
+          <div class="feat-cta">
+            <div class="feat-cta-text">Free estimates on <span>all</span> services.</div>
+            <a href="#contact" class="btn-gold">Get Your Estimate</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CALLOUT STRIP -->
+<div class="callout">
+  <div class="callout-inner">
+    <div class="callout-msg rv">Ready to get started?<br><span>Call or text us today.</span></div>
+    <a href="tel:9188571110" class="callout-num rv">918.857.1110</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="rvl">
+        <div class="eyebrow">Why Shepherds</div>
+        <h2 class="section-title">We Build With <span>Integrity.</span></h2>
+        <div class="gold-rule"></div>
+        <p class="section-body">Shepherds Construction Group was built on a simple belief — do the work right, treat people right, and the business takes care of itself.</p>
+        <div class="about-pull">
+          One contractor.<br>One standard.<br><span>Built on Faith. Built to Last.</span>
+        </div>
+        <ul class="value-list">
+          <li class="value-item">
+            <span class="value-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><div class="value-title">Honest Pricing</div><div class="value-desc">No hidden costs, no surprise change orders. You know the number before we start.</div></div>
+          </li>
+          <li class="value-item">
+            <span class="value-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <div><div class="value-title">We Show Up</div><div class="value-desc">We arrive when we say we will and we finish what we start. Every time.</div></div>
+          </li>
+          <li class="value-item">
+            <span class="value-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <div><div class="value-title">Quality Craftsmanship</div><div class="value-desc">Every job is backed by our commitment to the highest standard of workmanship.</div></div>
+          </li>
+          <li class="value-item">
+            <span class="value-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            <div><div class="value-title">Faith-Driven</div><div class="value-desc">Our values guide every decision — from how we treat our crew to how we treat our clients.</div></div>
+          </li>
+        </ul>
+      </div>
+      <div class="rvr">
+        <div class="stats-grid">
+          <div class="stat-box"><div class="stat-num">100%</div><div class="stat-lbl">Satisfaction Focus</div></div>
+          <div class="stat-box"><div class="stat-num">NE OK</div><div class="stat-lbl">Service Area</div></div>
+          <div class="stat-box"><div class="stat-num">12+</div><div class="stat-lbl">Trade Services</div></div>
+          <div class="stat-box"><div class="stat-num">Faith</div><div class="stat-lbl">Built On</div></div>
+        </div>
+        <div class="area-box">
+          <div class="area-label">Where We Work</div>
+          <div class="area-text">Tulsa, Broken Arrow, Owasso, Jenks, Bixby, Sand Springs, Claremore, and communities throughout Northeast Oklahoma.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rvl">
+        <div class="eyebrow">Get In Touch</div>
+        <h2 class="section-title">Ready to<br><span>Get Started?</span></h2>
+        <div class="gold-rule"></div>
+        <p class="section-body" style="margin-bottom: 36px;">Call us directly or fill out the form. We respond fast and every estimate is completely free.</p>
+        <a href="tel:9188571110" class="contact-phone">918.857.1110</a>
+        <div class="contact-hours">Call or Text — Monday through Saturday</div>
+        <div class="email-list">
+          <a href="mailto:info@ShepherdsConstructionGroup.com" class="email-link">
+            <span class="email-dot"></span>info@ShepherdsConstructionGroup.com
+          </a>
+          <a href="mailto:Andrew@ShepherdsConstructionGroup.com" class="email-link">
+            <span class="email-dot"></span>Andrew@ShepherdsConstructionGroup.com
+          </a>
+        </div>
+        <div class="area-card">
+          <div class="area-card-label">Serving</div>
+          <div class="area-card-text">Tulsa, Broken Arrow, Owasso, Jenks, Bixby, Sand Springs, Claremore &amp; all of NE Oklahoma</div>
+        </div>
+      </div>
+      <div class="form-wrap rvr">
+        <div class="form-ok" id="formOk">
+          <div class="form-ok-icon">✦</div>
+          <div class="form-ok-msg">Message received.<br>We'll be in touch shortly.</div>
+        </div>
+        <form id="contactForm">
+          <div class="form-heading">Request a Free Estimate</div>
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-lbl">Full Name *</label>
+              <input type="text" name="name" class="form-field" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label class="form-lbl">Phone Number *</label>
+              <input type="tel" name="phone" class="form-field" placeholder="918-555-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-lbl">Email Address</label>
+            <input type="email" name="email" class="form-field" placeholder="you@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-lbl">Service Needed</label>
+            <select name="service" class="form-field">
+              <option value="">Select a service...</option>
+              <option>Roofing — New or Replacement</option>
+              <option>Roof Repair or Leak</option>
+              <option>Storm or Hail Damage</option>
+              <option>Siding or Hardie Board</option>
+              <option>Exterior Painting</option>
+              <option>Drainage or Landscaping</option>
+              <option>Kitchen Remodel</option>
+              <option>Bathroom Remodel</option>
+              <option>Drywall / Flooring / Tile</option>
+              <option>Interior Painting</option>
+              <option>Full Home Remodel</option>
+              <option>Estimate or Inspection</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-lbl">Tell Us About Your Project *</label>
+            <textarea name="message" class="form-field" placeholder="Describe your project, location, and ideal timeline..." required></textarea>
+          </div>
+          <button type="submit" class="form-btn" id="submitBtn">Send Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="Logo_NoBackground.png" alt="Shepherds Construction Group" /></div>
+    <div class="footer-tag">Built on Faith. Built to Last.</div>
+    <div class="footer-copy">© <span id="yr"></span> Shepherds Construction Group</div>
+  </div>
+</footer>
+
+<a href="tel:9188571110" class="m-cta">📞 918.857.1110 — Free Estimate</a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Mobile menu
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+  function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  // Accordion
+  function toggleAcc(header) {
+    const item = header.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.acc-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('on'), i * 80);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.rv, .rvl, .rvr').forEach(el => obs.observe(el));
+
+  // Form submission
+  document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (e.target.querySelector('[name="_gotcha"]').value) return;
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    try {
+      const res = await fetch('https://formspree.io/f/mvznprjn', {
+        method: 'POST',
+        body: new FormData(e.target),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        e.target.style.display = 'none';
+        document.getElementById('formOk').style.display = 'block';
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Send Request';
+        alert('Something went wrong. Please call 918.857.1110 directly.');
+      }
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Send Request';
+      alert('Something went wrong. Please call 918.857.1110 directly.');
+    }
+  });
+</script>
+</body>
+</html>
